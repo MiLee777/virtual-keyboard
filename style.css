@@ -33,6 +33,7 @@
     margin: 3px;
     padding: 3px;
     float: left;
+    cursor: pointer;
 }
 
 .clearfix {
@@ -41,3 +42,10 @@
     clear: both;
 }
 
+.new-class {
+    width: 113px;
+}
+
+.active {
+    background: orange;
+}
