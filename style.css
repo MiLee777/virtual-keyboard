@@ -1,3 +1,7 @@
+body {
+    background: radial-gradient(circle, rgba(238,174,202,0.34217436974789917) 0%, rgba(148,187,233,1) 100%);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -5,19 +9,31 @@
 }
 
 .heading {
-
+    font-size: 70px;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Darumadrop One', cursive;
 }
 
 .text {
     width: 50%;
     height: 200px;
+    font-size: 25px;
+    font-family: 'Darumadrop One', cursive;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9e3ed;
 }
 
 .keyboard {
     display: block;
-    border: 2px solid black;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9e3ed;
     padding: 5px;
     margin-top: 20px;
+    font-family: 'Darumadrop One', cursive;
 }
 
 .keyboard::after {
@@ -29,11 +45,17 @@
 .keys {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    background: radial-gradient(circle, rgba(238,174,202,0.34217436974789917) 0%, rgba(148,187,233,1) 100%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .2);
     margin: 3px;
     padding: 3px;
     float: left;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clearfix {
@@ -46,6 +68,16 @@
     width: 113px;
 }
 
-.active {
-    background: orange;
+.shift-left {
+    width: 175px;
 }
+
+.space {
+    width: 423px;
+}
+
+.active {
+    box-shadow: none;
+}
+
+
